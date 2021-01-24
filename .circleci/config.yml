@@ -8,6 +8,6 @@ jobs:
       - checkout
       - setup_remote_docker
       - run: |
-          docker build -t deuscaeli/around-go .
+          docker build -t murakumo/around-go .
           docker login -u="$DOCKERHUB_USERNAME" -p="$DOCKERHUB_PASSWORD"
-          docker push deuscaeli/around-go
+          docker push murakumo/around-go
